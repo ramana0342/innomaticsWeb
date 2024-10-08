@@ -1,0 +1,170 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+
+section{
+    margin: 0px;
+    padding: 0px 20px;
+    width: 100%; 
+    
+}
+
+.scrolling-text {
+    display: inline-block; 
+    animation: scroll 10s linear infinite; 
+    white-space: nowrap; 
+    position: fixed;
+    overflow: hidden;
+    
+}
+
+@keyframes scroll {
+    0% { transform: translateX(-100%); } 
+    100% { transform: translateX(100%); } 
+}
+@media screen and (max-width: 768px) {
+    .scrolling-text {
+        font-size: 14px; 
+    }
+}
+
+
+
+#navBar{
+    width:100%;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+position: fixed !important;
+z-index: 10;
+top:0;
+    
+}
+
+
+.navBar1 p{
+    padding: 0px;
+    margin: 0px;
+}
+
+.navBar1 {
+    width: 100vw;
+    height: 40px;
+    background-color: brown;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    
+}
+
+.nav-link:hover{
+    border-bottom: 2px solid black;
+}
+
+
+
+.navBar2{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.innoLogo{
+    width:200px;
+    
+}
+
+.navList{
+    display: flex;
+    justify-content: end;
+}
+
+@media screen  and (max-width:720px){
+    .navBar1 {
+        width: 100vw;
+        height: 40px;
+        background-color: brown;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; 
+        
+    } 
+    .navBar1{
+        height:fit-content;
+    }
+}
+
+#Awards{
+   
+    padding: 30px;
+   
+}
+
+.curosalImage, .courceCard img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+.curosalImage{
+    width: 100%;
+    height: 80vh;
+}
+
+
+.courceCard {
+    text-align: center;
+    padding: 20px;
+}
+
+
+#classRooms{
+    margin-top: 10px;
+}
+
+
+.footerContnent{
+    display: flex;
+    background-color: black;
+    color: white;
+}
+
+.footerDiv1 , .footerDiv3{
+    width:35%;
+    margin: 10px;
+}
+ .footerDiv2{
+    width: 20%;
+    margin:10px
+ }
+
+
+
+
+@media screen and (max-width:575px) {
+    .footerContnent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+    }
+    .footerDiv1 , .footerDiv2 , .footerDiv3{
+        width: 100%;
+        margin: 20px;
+    }
+}
+
+
+
+
+
+
+
+
